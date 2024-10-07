@@ -1,5 +1,9 @@
 const parseEnv = () => {
-    // Write your code here 
+  for (let key in process.env) {
+    if (key.startsWith("RSS")) {
+      console.log(process.env[key]);
+    }
+  }
 };
 
 parseEnv();
